@@ -58,4 +58,7 @@ plt.legend()
 plt.xlabel("Days since 22 January 2020")
 plt.ylabel("Total number of infected people")
 plt.ylim((min(y)*0.9,c*1.1))
+for i,txt in enumerate(y):
+    plt.annotate(txt, (x[i],y[i]))
+
 plt.show()
