@@ -16,9 +16,10 @@ def createList(r1, r2):
 
 
 x = createList(1, len(y))
-#print(x)
-#print(y)
-
+print(x)
+print(len(x))
+print(y)
+print(len(y))
 
 def logistic_model(x, a, b, c):
     return c / (1 + np.exp(-(x - b) / a))
